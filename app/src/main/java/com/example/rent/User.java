@@ -188,13 +188,19 @@ public class User{
 					new Response.Listener<String>() {
 						@Override
 						public void onResponse(String response) {
-
+							try {
+								JSONObject jsonObject = new JSONObject(response);
+								
+							} catch (JSONException e) {
+								e.printStackTrace();
+								Toast.makeText(context,"Register error " + e.toString(), Toast.LENGTH_LONG).show();
+							}
 						}
 					},
 					new Response.ErrorListener() {
 						@Override
 						public void onErrorResponse(VolleyError error) {
-
+							Toast.makeText(context,"Register error " , Toast.LENGTH_LONG).show();
 						}
 					});
 
