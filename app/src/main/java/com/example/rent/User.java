@@ -180,4 +180,28 @@ public class User{
 	}
 
 
+
+	 public ArrayList<User> getUserData(){
+			ArrayList<User> userData = new ArrayList<>();
+
+			StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_USER,
+					new Response.Listener<String>() {
+						@Override
+						public void onResponse(String response) {
+
+						}
+					},
+					new Response.ErrorListener() {
+						@Override
+						public void onErrorResponse(VolleyError error) {
+
+						}
+					});
+
+
+		 RequestQueue requestQueue = Volley.newRequestQueue(context);
+		 requestQueue.add(stringRequest);
+		 return userData;
+	 }
+
 }
