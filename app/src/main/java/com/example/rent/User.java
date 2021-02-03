@@ -190,7 +190,7 @@ public class User{
 						public void onResponse(String response) {
 							try {
 								JSONObject jsonObject = new JSONObject(response);
-								
+
 							} catch (JSONException e) {
 								e.printStackTrace();
 								Toast.makeText(context,"Register error " + e.toString(), Toast.LENGTH_LONG).show();
