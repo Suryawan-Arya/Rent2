@@ -6,20 +6,15 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class VehicleDetailActivity extends AppCompatActivity {
+public class BookingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vehicle_detail);
+        setContentView(R.layout.activity_booking);
     }
 
     public void Back(View view) {
         startActivity(new Intent(getApplicationContext(),MainMenuActivity.class));
-
-    }
-
-    public void BookNow(View view) {
-        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
     }
 }
