@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MenuRentalActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".MenuRentalActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".VehicleDetailActivity" />
         <activity android:name=".MainMenuActivity" />

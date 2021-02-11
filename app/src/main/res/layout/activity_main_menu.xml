@@ -277,6 +277,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="170dp"
                         android:layout_height="170dp"
+                        android:onClick="Profile"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="0dp"
                         app:cardMaxElevation="0dp">

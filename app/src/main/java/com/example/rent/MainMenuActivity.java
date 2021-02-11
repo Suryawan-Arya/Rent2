@@ -18,4 +18,9 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),VehicleDetailActivity.class));
 
     }
+
+    public void Profile(View view) {
+        startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+
+    }
 }
